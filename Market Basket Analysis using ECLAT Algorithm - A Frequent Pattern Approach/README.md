@@ -47,13 +47,13 @@ This repository demonstrates market-basket analysis using the ECLAT algorithm to
 - Python 3.8+ recommended.
 - Typical packages used in notebooks and scripts: `pandas`, `numpy`, `matplotlib`, `seaborn`. If you run the notebooks, install Jupyter as well.
 
-Create a virtual environment and install dependencies (Windows `cmd.exe`):
+Create a virtual environment named `uv` and install dependencies (Windows `cmd.exe`):
 
 ```
-python -m venv .venv
-.venv\Scripts\activate
+python -m venv uv
+uv\Scripts\activate
 pip install --upgrade pip
-pip install pandas numpy matplotlib seaborn jupyter
+pip install -r requirements.txt
 ```
 
 If you want to run code from `scripts/`, ensure the working directory is the repository root.
@@ -63,7 +63,7 @@ If you want to run code from `scripts/`, ensure the working directory is the rep
 - Start Jupyter from the repository root (Windows `cmd.exe`):
 
 ```
-.venv\Scripts\activate
+uv\Scripts\activate
 jupyter notebook
 ```
 
@@ -74,7 +74,7 @@ jupyter notebook
 - Example: running `eclat.py` directly (if it supports CLI). From the repo root in `cmd.exe`:
 
 ```
-.venv\Scripts\activate
+uv\Scripts\activate
 python scripts\eclat.py --input "dataset\list\Market Basket Analysis 1.csv" --minsup 0.02
 ```
 
