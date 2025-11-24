@@ -8,7 +8,7 @@ I am passionate about leveraging data science and artificial intelligence to sol
 
 ---
 
-## 1. Data Science & Machine Learning
+## 1. Data Science & Optimization
 
 Foundational machine learning projects focusing on supervised and unsupervised learning, predictive modeling, and statistical analysis.
 
@@ -17,9 +17,10 @@ Foundational machine learning projects focusing on supervised and unsupervised l
 | Heart Disease Diagnosis | KNN, Naive Bayes, Decision Tree | |
 | Advanced House Price Prediction | | |
 | Transfer Optimization System | | |
-|Customer Segmentation for Marketing Strategy | | |
-
+|[Market Basket Analysis using ECLAT Algorithm - A Frequent Pattern Approach](Market%20Basket%20Analysis%20using%20ECLAT%20Algorithm%20-%20A%20Frequent%20Pattern%20Approach/)
+ | | |
 ---
+
 
 ## 2. Time Series
 
