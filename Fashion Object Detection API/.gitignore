@@ -1,0 +1,76 @@
+# -----------------------------
+# Python
+# -----------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.env/
+.venv/
+venv/
+ENV/
+
+# Jupyter & Colab
+.ipynb_checkpoints/
+*.ipynb
+
+# VSCode / IDEs
+.vscode/
+.idea/
+*.swp
+
+# Logs & runtime
+*.log
+*.pid
+*.gz
+*.sqlite3
+
+# Byte-compiled / cache
+*.cache
+.cache/
+*.pytest_cache/
+.pytest_cache/
+
+# Coverage
+htmlcov/
+.coverage
+.coverage.*
+*.cover
+*.py,cover
+.coverage/
+covhtml/
+
+# MyPy & Pyre type checker
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+
+# FastAPI specific
+*.db
+instance/
+*.db-journal
+
+# Environment & secrets
+.env
+.env.local
+.env.*.local
+
+# Node (if Gradio UI builds frontend stuff)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Gradio / Streamlit temp
+.gradio/
+.streamlit/
