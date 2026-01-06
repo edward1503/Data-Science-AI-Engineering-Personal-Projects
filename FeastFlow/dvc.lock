@@ -1,0 +1,68 @@
+schema: '2.0'
+stages:
+  download:
+    cmd: python scripts/download_data.py
+    deps:
+    - path: scripts/download_data.py
+      hash: md5
+      md5: 7bc26bda01d940f29cfbd8d80dba3daa
+      size: 874
+    outs:
+    - path: data/raw/telco-customer-churn
+      hash: md5
+      md5: 063d451250fb0faa73bc60935e759442.dir
+      size: 977501
+      nfiles: 1
+  transform:
+    cmd: python scripts/transform_data.py
+    deps:
+    - path: data/raw/telco-customer-churn
+      hash: md5
+      md5: 063d451250fb0faa73bc60935e759442.dir
+      size: 977501
+      nfiles: 1
+    - path: scripts/transform_data.py
+      hash: md5
+      md5: 659445a42931579f01241157d81586cf
+      size: 5316
+    outs:
+    - path: data/processed/telco_churn_processed.parquet
+      hash: md5
+      md5: a8de5f1d93a293eb37b0ba15439cc452
+      size: 280732
+  setup_feast:
+    cmd: python scripts/setup_feast.py
+    deps:
+    - path: data/processed/telco_churn_processed.parquet
+      hash: md5
+      md5: a8de5f1d93a293eb37b0ba15439cc452
+      size: 280732
+    - path: feature_repo/feature_store
+      hash: md5
+      md5: c993a84ad749c36afe71bac28eccdd4e.dir
+      size: 57457
+      nfiles: 13
+    - path: scripts/setup_feast.py
+      hash: md5
+      md5: cd705daad7104be65daf6b6e6f562579
+      size: 3668
+  train:
+    cmd: python scripts/train_model.py
+    deps:
+    - path: data/processed/telco_churn_processed.parquet
+      hash: md5
+      md5: a8de5f1d93a293eb37b0ba15439cc452
+      size: 280732
+    - path: scripts/train_model.py
+      hash: md5
+      md5: bbec2e8891c230b43e7c9a31829ecdef
+      size: 4204
+    outs:
+    - path: model/churn_model.pkl
+      hash: md5
+      md5: f42381d7090891650b9369e31b51b520
+      size: 4958245
+    - path: model/model_info.json
+      hash: md5
+      md5: 582e3fc9412f0e338010a001a1077acb
+      size: 1991

@@ -1,0 +1,34 @@
+stages:
+  download:
+    cmd: python scripts/download_data.py
+    deps:
+      - scripts/download_data.py
+    outs:
+      - data/raw/telco-customer-churn
+
+  transform:
+    cmd: python scripts/transform_data.py
+    deps:
+      - scripts/transform_data.py
+      - data/raw/telco-customer-churn
+    outs:
+      - data/processed/telco_churn_processed.parquet
+
+  setup_feast:
+    cmd: python scripts/setup_feast.py
+    deps:
+      - scripts/setup_feast.py
+      - data/processed/telco_churn_processed.parquet
+      - feature_repo/
+
+  train:
+    cmd: python scripts/train_model.py
+    deps:
+      - scripts/train_model.py
+      - data/processed/telco_churn_processed.parquet
+    outs:
+      - model/churn_model.pkl
+      - model/model_info.json
+
+metrics:
+  - model/metrics.json
