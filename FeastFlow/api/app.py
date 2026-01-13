@@ -75,7 +75,7 @@ async def predict_churn(request: PredictionRequest):
     try:
         # Get features from Feast online store
         feature_vector = store.get_online_features(
-            features=store.get_feature_service("churn_service_v1"),
+            features=store.get_feature_service("churn_service_v2"),
             entity_rows=[{"customerID": request.customerID}]
         ).to_dict()
         

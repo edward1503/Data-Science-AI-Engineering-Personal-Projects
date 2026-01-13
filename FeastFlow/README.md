@@ -143,45 +143,4 @@ Features:
 python scripts/train_model.py
 ```
 
-📈 **What This Demo Teaches**  
-**For Data Engineers**:
-
-- Building scalable feature pipelines.
-- Implementing feature stores in production.
-- Ensuring feature consistency across environments.
-- Setting up real-time feature serving.
-
-**For ML Engineers**:
-
-- Preventing training-serving skew.
-- Reproducible model training with point-in-time correctness.
-- Feature versioning and management.
-- Model deployment with feature stores.
-
-**For Learners**:
-
-- Understanding end-to-end MLOps pipelines.
-- Importance of feature management.
-- Real-world implementation patterns.
-- Tool integration in ML systems.
-
-🚀 **Production Considerations**  
-To adapt this demo for production:
-
-- **Scalability**: Use Spark for large datasets.
-- **Orchestration**: Integrate Apache Airflow or Prefect for pipeline management.
-- **Monitoring**: Use MLflow for experiment tracking and Prometheus for metrics.
-- **Security**: Add authentication/authorization for API endpoints.
-- **CI/CD**: Implement automated testing and deployment pipelines.
-
-🤝 **Contributing**
-
-1. Fork the repository.
-2. Create a feature branch (`git checkout -b feature/your-feature`).
-3. Make your changes and add tests if applicable.
-4. Submit a pull request.
-
-📝 **License**  
-This project is for educational purposes. The dataset is sourced from Kaggle and is subject to [Kaggle's terms of use](https://www.kaggle.com/terms).
-
 Built with ❤️ for the AIO2025 community.

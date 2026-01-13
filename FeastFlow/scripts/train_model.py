@@ -23,7 +23,7 @@ def get_training_data():
     # Get training data from Feast
     training_df = store.get_historical_features(
         entity_df=entity_df,
-        features=store.get_feature_service("churn_service_v1")
+        features=store.get_feature_service("churn_service_v2")
     ).to_df()
     
     # Merge with target variable
