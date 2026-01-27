@@ -17,10 +17,9 @@ Foundational machine learning projects focusing on supervised and unsupervised l
 | Heart Disease Diagnosis | KNN, Naive Bayes, Decision Tree | |
 | Advanced House Price Prediction | | |
 | Transfer Optimization System | | |
-|[Market Basket Analysis using ECLAT Algorithm - A Frequent Pattern Approach](Market%20Basket%20Analysis%20using%20ECLAT%20Algorithm%20-%20A%20Frequent%20Pattern%20Approach/)
- | | |
+|[Market Basket Analysis using ECLAT Algorithm - A Frequent Pattern Approach](Market%20Basket%20Analysis%20using%20ECLAT%20Algorithm%20-%20A%20Frequent%20Pattern%20Approach/) | ECLAT, FPGrowth, Apriori | 
+  | |
 ---
-
 
 ## 2. Time Series
 
@@ -28,8 +27,8 @@ Projects focused on time-series analysis, forecasting, and temporal pattern reco
 
 | Project Name | Tools | Description |
 |---|---|---|
-| Stock Price Prediction with NLinear & DLinear| | |
-| Transformer + LSTM/GRU for Vietnamese Stocks Price Prediction | | |
+| [Stock Price Prediction with NLinear & RDLinear with HMM Regime Switching](Long-Time%20Series-Forecast%20with%20RevIN%20and%20Regime%20Switch)| Linear, DLinear, HMM, RevIN | This project implemented state-of-the-art Time Series Decomposition Linear Models. The results show that the overall performance of RDLinear with Reversible Instance Normalization achieved best performance with adaptive Regime Market. |
+| [Transformer + LSTM/GRU for Vietnamese Stocks Price Prediction](https://github.com/dalzihn/TI_Final) | | |
 | | | |
 
 ---
@@ -69,7 +68,7 @@ Large Language Models and AI agents projects, including fine-tuning, prompt engi
 
 ---
 
-## 6. Ops
+<!-- ## 6. Ops
 
 Tools for MLOps and deployment
 
@@ -83,7 +82,7 @@ Tools for MLOps and deployment
 | FEAST for Feature Storing | | |
 | AWS (EC2, S3, ECR, ECS) | | |
 | FastAPI for deploy ML model | | |
---- 
+---  -->
 
 ## Getting Started
 
@@ -92,11 +91,8 @@ To explore any of these projects, navigate to the respective directory and follo
 ## Technologies & Skills
 
 - **Languages:** Python, SQL, R
-- **ML/DL Frameworks:** TensorFlow, PyTorch, Scikit-learn, XGBoost
-- **Data Processing:** Pandas, NumPy, Polars
-- **Visualization:** Matplotlib, Seaborn, Plotly
-- **Tools:** Jupyter, Git, AWS, Google Colab
-
+- **ML/DL Frameworks:** PyTorch, Scikit-learn
+- **MLOps:** FastAPI, FEAST, Airflow, MLFlow, Grafana, Prometheus, Data Version Control
 ---
 
-**Last Updated:** November 2025
+**Last Updated:** January 2026
