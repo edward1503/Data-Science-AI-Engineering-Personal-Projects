@@ -28,8 +28,8 @@ Projects focused on time-series analysis, forecasting, and temporal pattern reco
 | Project Name | Tools | Description |
 |---|---|---|
 | [Stock Price Prediction with NLinear & RDLinear with HMM Regime Switching](Long-Time%20Series-Forecast%20with%20RevIN%20and%20Regime%20Switch)| Linear, DLinear, HMM, RevIN | This project implemented state-of-the-art Time Series Decomposition Linear Models. The results show that the overall performance of RDLinear with Reversible Instance Normalization achieved best performance with adaptive Regime Market. |
-| [Transformer + LSTM/GRU for Vietnamese Stocks Price Prediction](https://github.com/dalzihn/TI_Final) | | |
-| | | |
+| [Transformer + LSTM/GRU for Vietnamese Stocks Price Prediction](https://github.com/dalzihn/TI_Final) | Attention, LSTM, GRU | This project explored the combination of Attention mechanism and Recurrent backbone such as LSTM/GRU. The results shows that with Attention, the performance of these variants increase about 5-10% with lower error metrics|
+|  | | |
 
 ---
 
@@ -39,8 +39,8 @@ Image processing and analysis projects, including object detection, image classi
 
 | Project Name | Tools | Description |
 |---|---|---|
-| | | |
-| | | |
+| Text Recognition with OCR and CRNN | ViT, CRNN, yolo | |
+| Video Action Classification with LS-ViT | LSViT, Data Augmentation | |
 | | | |
 
 ---
